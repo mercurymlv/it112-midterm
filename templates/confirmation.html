@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}MV - Confirmation{% endblock %}
+
+{% block content %}
+<!-- This has the fun thumb's up Bootstrap icon -->
+    <h1>Confirmation is always nice <i class="bi bi-hand-thumbs-up"></i></h1>
+    <p>Thank you for your submission, <strong> {{ name }}</strong>! I will contact you shortly!</p>
+    <p>We received the following details:</p>
+    <ul>
+        <li><strong>Name:</strong> {{ name }}</li>
+        <li><strong>Email:</strong> {{ email }}</li>
+        <li><strong>Color Preference:</strong> {{ color }}</li>
+    </ul>
+    <p>I hope you enjoy this color change!</p>
+    <p>...and here is a thematic image to go with the color:</p>
+    {% if image_url %}
+    <img src="{{ image_url }}" alt="Color-themed image" class="img-fluid">
+    {% endif %}
+{% endblock %}
+

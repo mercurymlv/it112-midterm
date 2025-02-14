@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}MV - Contact Me{% endblock %}
+
+{% block content %}
+    <h1>Let me know some stuff!</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+            {{ form.name.label(class="form-label") }}
+            {{ form.name(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.email.label(class="form-label") }}
+            {{ form.email(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.color.label(class="form-label") }}
+            {{ form.color(class="form-check") }}
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Submit</button>
+    </form>
+{% endblock %}

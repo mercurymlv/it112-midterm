@@ -1,0 +1,32 @@
+/* Update color theme to user's fav color -->
+this doesn't persist beyond the confirmation page though - need to look into how to do this */
+
+.Blue-theme {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.Red-theme {
+    background-color: #dc3545;
+    color: white;
+}
+.Green-theme {
+    background-color: #198754;
+    color: white;
+}
+.Orange-theme {
+    background-color: #fd7e14;
+    color: black;
+}
+.Purple-theme {
+    background-color: #6f42c1;
+    color: white;
+}
+
+a {
+    color: #FF5733;
+}
+
+a:hover {
+    color:cadetblue;
+}

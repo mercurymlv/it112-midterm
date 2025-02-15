@@ -30,3 +30,12 @@ a {
 a:hover {
     color:cadetblue;
 }
+
+.social {
+    background-color: black;
+    margin-top: 8em;
+}
+
+.social-icon {
+    color: white;
+}
